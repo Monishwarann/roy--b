@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: drug-discovery-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    rootDirectory: backend
+    envVars:
+      - key: MONGO_URL
+        sync: false # Set this in Render dashboard
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "1440"

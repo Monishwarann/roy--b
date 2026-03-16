@@ -1,0 +1,23 @@
+# Web Framework & Server
+fastapi
+uvicorn
+python-multipart
+pydantic
+email-validator
+httpx
+
+# Database (MongoDB)
+motor
+pymongo
+
+# Security & Authentication
+passlib[bcrypt]
+python-jose[cryptography]
+
+# Machine Learning & Data Processing
+numpy==1.23.5
+joblib
+scikit-learn==1.2.2
+
+# Environment Configuration
+python-dotenv
