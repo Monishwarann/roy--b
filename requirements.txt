@@ -19,9 +19,9 @@ passlib[bcrypt]
 python-jose[cryptography]
 
 # Machine Learning & Data Processing
-numpy==1.23.5
+numpy
 joblib
-scikit-learn==1.2.2
+scikit-learn
 
 # Environment Configuration
 python-dotenv
