@@ -1,6 +1,10 @@
+# Build tools
+setuptools
+wheel
+
 # Web Framework & Server
 fastapi
-uvicorn
+uvicorn[standard]
 python-multipart
 pydantic
 email-validator
